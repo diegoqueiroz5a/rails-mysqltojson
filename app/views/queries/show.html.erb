@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Query:</strong>
+  <%= @query.query %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @query.format %>
+</p>
+
+<p>
+  <strong>Preppend:</strong>
+  <%= @query.preppend %>
+</p>
+
+<p>
+  <strong>Append:</strong>
+  <%= @query.append %>
+</p>
+
+<p>
+  <strong>Separator:</strong>
+  <%= @query.separator %>
+</p>
+
+<%= link_to 'Edit', edit_query_path(@query) %> |
+<%= link_to 'Back', queries_path %>

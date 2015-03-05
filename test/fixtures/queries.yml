@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  query: MyString
+  format: MyString
+  preppend: MyString
+  append: MyString
+  separator: MyString
+
+two:
+  query: MyString
+  format: MyString
+  preppend: MyString
+  append: MyString
+  separator: MyString
