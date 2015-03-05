@@ -1,8 +1,8 @@
 require 'mysql'
 
 class QueriesController < ApplicationController
-  before_action :set_query, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:show, :edit, :update, :destroy]
+  before_action :set_query, only: [:show, :edit, :update, :destroy, :exec]
   
   include QueriesHelper
 
@@ -28,10 +28,9 @@ class QueriesController < ApplicationController
   
   # GET /queries/1/exec
   def exec
-    @query = Query.find(params[:id])
     result = format_query(@query)
     respond_to do |format|
-      format.json { render json: result}
+      format.json { render json: result }
     end    
   end
 
