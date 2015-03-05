@@ -1,0 +1,1 @@
+BI_DATABASE_CREDENTIALS = YAML.load_file(Rails.root.to_s + "/config/bi_database.yml")['credentials']
