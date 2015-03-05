@@ -2,7 +2,8 @@ require 'mysql'
 
 class QueriesController < ApplicationController
   before_action :set_query, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
+  
   include QueriesHelper
 
   # GET /queries
