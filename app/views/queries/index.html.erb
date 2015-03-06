@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
       <th>Query</th>
       <th>Format</th>
       <th>Preppend</th>
@@ -17,6 +18,7 @@
   <tbody>
     <% @queries.each do |query| %>
       <tr>
+        <td><%= query.name %></td>
         <td><%= query.query %></td>
         <td><%= query.format %></td>
         <td><%= query.preppend %></td>
