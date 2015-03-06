@@ -25,4 +25,7 @@ credentials:
 rails s
 ```
 
-#### The application will be available in: ```http://localhost:3000```
+#### The application will be available in
+```
+http://localhost:3000
+```
