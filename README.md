@@ -11,7 +11,7 @@ exit
 ``` 
 
 #### Add the target mysql database credentials:
-Create a new file: ``` shellconfig/bi_database.yml```
+Create a new file: ``` config/bi_database.yml```
 Set the database credentials inside:
 ``` yml
 credentials:
