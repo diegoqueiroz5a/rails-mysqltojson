@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+table{
+  border-collapse: collapse;
+}
+table td, table th{
+  border: solid 1px;
+}
+table tbody tr:nth-child(odd){
+  background-color: #EAEAEA;
+}
+input{
+  width: calc(100% - 24px);
+  padding: 10px;
+}
+input[type=submit]{
+  padding: 20px 5px;
+  display: inline-block;
+  background-color: #EAEAEA;
+  width: 100%;
+  border: solid 1px;
+}
+textarea{
+  width: calc(100% - 4px);
+  height: 150px;
+}
