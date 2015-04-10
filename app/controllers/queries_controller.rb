@@ -30,7 +30,7 @@ class QueriesController < ApplicationController
   def exec
     result = format_query(@query)
     respond_to do |format|
-      format.json { render json: JSON.generate(JSON.parse(result), :ascii_only => true) }
+      format.json { render json: result }
     end    
   end
 
